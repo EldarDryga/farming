@@ -1,13 +1,7 @@
-# Sample Hardhat Project
+# Farming contract of tokens on Sksync Blockchain
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project allows users to deposit tokenB and receive a reward of tokenA every second since the user deposit, the reward depends on the total number of tokens in the pool and the number of tokens deposited by the user.
+Go to following [link](https://goerli.explorer.zksync.io/address/0x7D7DF2A03187dB9De47c60125ed4792831bBdDA1#contract)
+mint some tokens for 2 accounts, approve the amount of token you want to deposit, and go to [this link](https://goerli.explorer.zksync.io/address/0x960B38fb393948f3404f12a3A9198bA7211C109d#contract)
+call a function "deposit_tokenB" from 2 accounts, and after 2 or more seconds call a function "withdrawAll"
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
